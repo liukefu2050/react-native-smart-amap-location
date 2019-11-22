@@ -59,7 +59,7 @@ public class RCTAMapLocationModule extends ReactContextBaseJavaModule {
         this.reactContext = reactContext;
     }
 
-    @Override
+
     public String getName() {
         return "AMapLocation";
     }
@@ -132,7 +132,7 @@ public class RCTAMapLocationModule extends ReactContextBaseJavaModule {
             filter.addAction("LOCATION");
 
             alarmReceiver = new BroadcastReceiver(){
-                @Override
+
                 public void onReceive(Context context, Intent intent) {
                     if(intent.getAction().equals("LOCATION")){
                         if(null != locationClient){
@@ -267,7 +267,7 @@ public class RCTAMapLocationModule extends ReactContextBaseJavaModule {
     }
 
     AMapLocationListener locationListener = new AMapLocationListener() {
-        @Override
+
         public void onLocationChanged(AMapLocation location) {
             if(null == mHandler) {
                 WritableMap resultMap = setResultMap(location);
@@ -283,7 +283,7 @@ public class RCTAMapLocationModule extends ReactContextBaseJavaModule {
         }
     };
 
-    @Override
+
     public Map<String, Object> getConstants() {
         return Collections.unmodifiableMap(new HashMap<String, Object>() {
             {

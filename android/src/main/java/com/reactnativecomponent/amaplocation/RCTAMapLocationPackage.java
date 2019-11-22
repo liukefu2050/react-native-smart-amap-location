@@ -13,7 +13,7 @@ import java.util.List;
 
 public class RCTAMapLocationPackage implements ReactPackage {
 
-    @Override
+
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         return Arrays.<NativeModule>asList(
                 new RCTAMapLocationModule(reactContext)
@@ -24,7 +24,7 @@ public class RCTAMapLocationPackage implements ReactPackage {
         return Collections.emptyList();
     }
 
-    @Override
+
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Arrays.<ViewManager>asList();
     }
