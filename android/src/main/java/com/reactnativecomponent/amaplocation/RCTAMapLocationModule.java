@@ -283,7 +283,6 @@ public class RCTAMapLocationModule extends ReactContextBaseJavaModule {
         }
     };
 
-    @Nullable
     @Override
     public Map<String, Object> getConstants() {
         return Collections.unmodifiableMap(new HashMap<String, Object>() {
